@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>에브리디어 랜딩 페이지</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --primary: #84BD93;
+      --accent: #4e54c8;
+      --bg: #f5f7fa;
+      --text: #333;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 30px 20px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .logo-img {
+      max-width: 220px;
+      height: auto;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .instagram-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 1.7rem;
+      color: #fff;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    .instagram-link:hover {
+      opacity: 0.7;
+    }
+
+    .fullwidth-section {
+      width: 100%;
+      background: #fff;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .fullwidth-section img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .survey-btn {
+      display: inline-block;
+      margin-top: 0px;
+      padding: 20px 60px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 50px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .survey-btn:hover {
+      background: #333;
+    }
+
+    footer {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .instagram-link {
+        top: 15px;
+        right: 15px;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 헤더 영역 -->
+  <header>
+    <a href="https://www.instagram.com/everydear.official" class="instagram-link" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  <img src="logo.png" alt="EVERYDEAR 로고" class="logo-img">
+  </header>
+
+  <!-- 서비스 소개 이미지 섹션 (100% 가로 확장) -->
+  <section class="fullwidth-section" id="form">
+    <img src="https://github.com/user-attachments/assets/1a45b89d-81ab-43ac-8900-cb4f7463446f" alt="서비스 소개 이미지">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYpdKXeN2gXIkk8mLdQ3VJaJAiXR8XXYduqR9YEbuPMB5AUQ/viewform?usp=header"
+       target="_blank"
+       class="survey-btn">
+      신청하기
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 에브리디어 | Contact: <a href="mailto:gwg03017@naver.com">gwg03017@naver.com</a>
+  </footer>
+
+</body>
+</html>
