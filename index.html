@@ -2,11 +2,10 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>에브리디어 랜딩 페이지</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>에브리디어 모바일 페이지</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <style>
     :root {
       --primary: #84BD93;
@@ -14,141 +13,97 @@
       --bg: #f5f7fa;
       --text: #333;
     }
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Poppins', sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
     }
-
     header {
       background: var(--primary);
-      color: #fff;
-      padding: 30px 20px 20px;
+      padding: 20px;
       text-align: center;
       position: relative;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .logo-img {
-      max-width: 220px;
+      max-width: 140px;
       height: auto;
-      display: inline-block;
-      margin-bottom: 10px;
     }
-
     .instagram-link {
       position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 1.7rem;
+      top: 15px;
+      right: 15px;
+      font-size: 1.5rem;
       color: #fff;
-      text-decoration: none;
-      transition: opacity 0.3s;
     }
-    .instagram-link:hover {
-      opacity: 0.7;
-    }
-
-    .fullwidth-section {
-      width: 100%;
-      background: #fff;
+    .main-section {
+      padding: 20px 16px;
       text-align: center;
-      padding: 60px 20px 40px;
     }
-
-    .fullwidth-section img {
+    .main-banner {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .main-banner h1 {
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .main-banner p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #555;
+    }
+    .preview-img {
       width: 100%;
-      max-width: 100%;
-      height: auto;
-      display: block;
+      border-radius: 10px;
+      margin: 20px 0;
     }
-
     .survey-btn {
       display: inline-block;
-      margin-top: 0px;
-      padding: 20px 60px;
+      padding: 16px 40px;
       background: var(--accent);
       color: #fff;
       border-radius: 50px;
-      font-size: 1.4rem;
-      font-weight: 700;
+      font-size: 1.2rem;
+      font-weight: 600;
       text-decoration: none;
-      transition: background 0.3s;
     }
     .survey-btn:hover {
       background: #333;
     }
-
     footer {
-      background: #fff;
-      padding: 20px;
+      margin-top: 40px;
       text-align: center;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #777;
+      padding: 20px;
     }
     footer a {
       color: var(--primary);
       text-decoration: none;
     }
-
-    @media (max-width: 768px) {
-      .instagram-link {
-        top: 15px;
-        right: 15px;
-        font-size: 1.5rem;
-      }
-  .logo-img {
-    max-width: 160px;
-  }
-
-  .fullwidth-section {
-    padding: 40px 15px 30px;
-  }
-
-  .fullwidth-section img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .survey-btn {
-    font-size: 1.2rem;
-    padding: 18px 40px;
-    margin-top: 10px;
-  }
-
-  footer {
-    font-size: 0.8rem;
-    padding: 15px;
-  }
-
-  .instagram-link {
-    font-size: 1.3rem;
-    top: 10px;
-    right: 10px;
-  }
-}
-
-    }
   </style>
 </head>
 <body>
-
-  <!-- 헤더 영역 -->
   <header>
     <a href="https://www.instagram.com/everydear.official" class="instagram-link" target="_blank" aria-label="Instagram">
       <i class="fab fa-instagram"></i>
     </a>
-  <img src="logo.png" alt="EVERYDEAR 로고" class="logo-img">  
+    <img src="logo.png" alt="EVERYDEAR 로고" class="logo-img">
   </header>
 
-  <!-- 서비스 소개 이미지 섹션 (100% 가로 확장) -->
-  <section class="fullwidth-section" id="form">
-    <img src="Landingpage.png" alt="EVERYDEAR 랜딩페이지" class="Landing page_img">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYpdKXeN2gXIkk8mLdQ3VJaJAiXR8XXYduqR9YEbuPMB5AUQ/viewform?usp=header"
-       target="_blank"
-       class="survey-btn">
+  <section class="main-section">
+      <img src="landingpage.png" alt="서비스 미리보기" class="preview-img">
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYpdKXeN2gXIkk8mLdQ3VJaJAiXR8XXYduqR9YEbuPMB5AUQ/viewform?usp=header" target="_blank" class="survey-btn">
       신청하기
     </a>
   </section>
@@ -156,6 +111,5 @@
   <footer>
     &copy; 2025 에브리디어 | Contact: <a href="mailto:gwg03017@naver.com">gwg03017@naver.com</a>
   </footer>
-
 </body>
 </html>
